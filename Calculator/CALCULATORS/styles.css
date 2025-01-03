@@ -1,0 +1,99 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Calculator{
+    width: 35vw;
+        height: 83vh;
+        background-color: rgb(49, 49, 49);
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.322);
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+}
+.screen{
+        width: 90%;
+        height: 25%;
+        background-color: #1f1f1f;
+        border-radius: 10px;
+        border: none;
+        margin-top: 2vh;
+        font-size: 4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        overflow: hidden;
+}
+
+.screen:focus {
+        border: none;
+        outline: none;
+
+}
+.Calculator-dig{
+        height: 69%;
+        display: flex;
+        justify-content: space-evenly;
+            flex-wrap: wrap;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn {
+    height: 13vmin;
+    width: 13vmin;
+    border-radius: 15px;
+    border: none;
+    background: rgb(32, 31, 31);
+    box-shadow: 0 0 5px 1px rgb(32, 31, 31);
+    color: white;
+    font-size: 5rem;
+}
+
+.btn:hover {
+    background: rgb(145, 42, 42);
+}
+
+.btn:active {
+    background: rgb(93, 24, 24);
+}
+.func {
+    height: 13vmin;
+    width: 13vmin;
+    border-radius: 15px;
+    border: none;
+    background: rgb(199, 199, 199);
+    box-shadow: 0 0 5px 1px rgb(167, 164, 164);
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+
+.func:hover {
+    background: rgb(145, 42, 42);
+}
+
+.func:active {
+    background: rgb(93, 24, 24);
+}
+#opr{
+background: rgb(255, 255, 0);
+color: black;
+box-shadow: 0 0 5px 0.5px yellowgreen;
+}
+#opr:hover {
+    background: rgb(173, 173, 20);}
+        #opr:active {
+            background: rgb(212, 212, 13);
+        }
+#vi{
+    visibility: hidden;
+}

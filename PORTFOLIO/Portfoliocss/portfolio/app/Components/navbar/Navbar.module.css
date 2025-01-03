@@ -1,0 +1,167 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-width: 25vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.096);
+}
+
+.sidebar.Nightsidebar {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in;
+}
+
+.logo h3 {
+    font-size: 3em;
+    font-family: "Style Script";
+    color: orangered;
+    border-bottom: 1px solid orangered;
+}
+
+.text {
+    height: 70vh;
+    width: 15vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: center;
+}
+
+.list {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(90, 89, 89);
+    transition: all 0.3s ease-in;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 2em;
+    transition: all 0.3s ease-in;
+}
+
+.list li:hover {
+    color: orangered;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.list svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+.list li a{
+    display: flex;
+}
+.list.NightList {
+    color: rgb(207, 207, 207);
+    transition: all 0.3s ease-in;
+}
+
+.mainbar {
+    background-color: whitesmoke;
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease-in;
+}
+
+.mainbar.Nightmainbar {
+    background-color: rgb(30, 29, 29);
+    color: whitesmoke;
+    transition: all 0.3s ease-in;
+}
+
+/* Slider */
+.Dayslider {
+    width: 7vw;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(222, 237, 7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+
+.Dayslider.Nightslider {
+    background-color: rgb(60, 0, 255);
+    justify-content: flex-end;
+    transition: all 0.3s ease-out;
+}
+
+.Dayslider img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.list img {
+    width: 1.3em;
+}
+
+@media (max-width: 1200px) {
+  .list li a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .sidebar{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+  }
+  .list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list svg {
+      margin: 0;
+  }
+  .logo h3 {
+      font-size: 1.5em;
+    }
+}
+@media (max-width: 768px) {
+
+    .sidebar {
+        min-width: 20vw;
+    }
+      
+    .list li {
+        flex-direction: column;
+        margin: 1em;
+    }
+    .list svg {
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .list li {
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+    }
+    .list li span {
+        display: none;
+    }
+}

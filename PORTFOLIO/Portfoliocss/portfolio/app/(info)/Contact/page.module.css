@@ -1,0 +1,51 @@
+.body{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mainbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    background: linear-gradient(to bottom right, #fff, rgba(255, 68, 0, 0.062));
+    margin-left: 25vw;
+    min-height: 100vh;
+    
+}
+.form{
+    background-color: white;
+    border-radius: 8px;
+    width: 80%;
+    height: max-content;
+    box-shadow: 0 0 8px 1px rgba(56, 56, 56, 0.116);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.form h2{
+    color: orangered;
+    /* margin: 1.5em; */
+    padding-bottom: 1.5em;
+    font-family: 'Style Script', cursive;
+}
+.form form{
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.form form input{
+    padding: 1em;
+    border-radius:8px ;
+    border: 0.25px solid rgb(194, 194, 194);
+}
+.form form textarea{
+    padding: 1em;
+    
+            border-radius: 8px;
+            border: 0.25px solid rgb(194, 194, 194);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

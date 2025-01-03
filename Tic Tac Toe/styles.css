@@ -1,0 +1,87 @@
+*{
+    margin: 0;padding: 0;
+}
+header{
+    background-color: black;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: white;
+}
+
+.gameBoard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120vh;
+    background-color: burlywood;
+    flex-direction: column;
+}
+.button{
+  gap: 10vh;
+  width: max-content;
+}
+.msg{
+         background: rgb(243, 0, 0);
+        border-radius: 10px;
+      
+        margin-top: -50px;
+        color: white;
+        border: none;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.322);
+}
+#msg{
+font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    padding: 0.75rem;
+}
+#Reset, #new-game{
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 0.75rem;
+    margin-top: -50px;
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.322);
+}
+
+#Reset:hover ,#new-game:hover {
+    background: rgb(196, 4, 4);
+}
+
+#Reset:active, #new-game:active {
+    background: rgb(165, 6, 6);
+}
+.btn{
+    height: 20vmin;
+    width: 20vmin;
+    border-radius: 15px;
+    border: none;
+    background:brown;
+    box-shadow: 0 0 5px 0.5px;
+    color: white;
+    font-size: 5rem;
+}
+.btn:hover{
+    background: rgb(145, 42, 42);
+}
+.btn:active {
+    background: rgb(93, 24, 24);
+}
+main{
+height: 67vh;
+    width: 70vmin;
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

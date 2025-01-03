@@ -1,0 +1,135 @@
+/* page.module.css */
+.body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #fff, rgba(255, 68, 0, 0.062));
+    font-family: 'Verdana', sans-serif;
+}
+
+.container {
+    margin-left: 25vw;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.introSection {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.introTitle {
+    font-family: 'Style Script', cursive;
+    font-size: 4rem;
+    color: orangered;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+
+.introText {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 40rem;
+    color: #333;
+}
+
+.sectionTitle {
+    color: orangered;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.educationTimeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 5rem;
+}
+
+.timelineLine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: orangered;
+}
+
+.timelineItem {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.timelineDot {
+    position: absolute;
+    left: -2.35rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: orangered;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px orangered;
+}
+
+.timelineYear {
+    color: orangered;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.timelineDegree {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.timelineInstitution {
+    color: #666;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.skillBox {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skillBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skillIcon {
+    color: orangered;
+    margin-bottom: 0.75rem;
+}
+
+.skillName {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .introTitle {
+        font-size: 3rem;
+    }
+
+    .skillsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
